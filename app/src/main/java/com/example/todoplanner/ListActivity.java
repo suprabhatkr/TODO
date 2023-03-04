@@ -68,7 +68,7 @@ public class ListActivity extends AppCompatActivity implements DialogCloseListen
     public void handleDialogClose(DialogInterface dialog){
         taskList = db.getAllTasks();
         Collections.reverse(taskList);
-        tasksAdapter.setTasks(taskList);
+        tasksAdapter.setTasks(taskList); //set the task list
         tasksAdapter.notifyDataSetChanged();
     }
 }
